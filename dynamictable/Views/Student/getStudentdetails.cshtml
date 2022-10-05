@@ -1,0 +1,100 @@
+﻿
+@{
+    ViewBag.Title = "getStudentdetails";
+}
+
+
+
+<h2>getStudentdetails</h2>
+
+<table id="GetStudentDetailsTable" class="table table-striped table-borderless table-sm table-hover font-size-14 text-center ">
+</table>
+@section scripts{
+    <script>
+        function tblemp(Urlvalue,Tablename) {
+            $.ajax({
+                url: Urlvalue,
+                type: 'POST',
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify(),
+                dataType: 'json',
+                success: function (data) {
+                    var columns = [];
+                    var columnextra = [];
+                    columnNames = Object.keys(data[0]);
+                    for (var i in columnNames) {
+                        if (columnNames[i] == 'delete') {
+                            columnextra.push({
+
+                                data: {
+                                    "mRender": function (data, type, row) {
+                                        return '<a class="opacity" valId = ' + row.delete + '  id="delete"> <i class="fa-solid fa-trash"></i></a>'
+                                    }
+                                },
+
+                            })
+
+                        }
+                        else if (columnNames[i] == 'edit') {
+                            columnextra.push({
+
+                                data: {
+                                    "mRender": function (data, type, row) {
+                                        return '<a class="opacity" valId = ' + row.edit + '  id="edit"> <i class="fa-solid fa-pen-to-square"></i></a>'
+                                    }
+                                },
+
+                            })
+
+                        }
+                        else {
+                            columns.push({
+                                data: columnNames[i],
+                                title: columnNames[i]
+                            });
+                        }
+                    }
+                    var merged = [];
+                    //merged = [].concat(columns, columnextra)
+                    for (var i in columnextra) {
+
+                        if (i == 0) {
+
+                            merged = [].concat(columns, columnextra[i].data);
+
+                        }
+                        else {
+                            merged = [].concat(merged, columnextra[i].data);
+                        }
+
+                    }
+
+                    //var merged = [].concat(columns, columnextra[0].test, columnextra[1].test);
+                    //columns.push = columnextra[0].test
+                    //// columns.push({
+                    ////   data: {
+                    ////       "mRender ": function (data, type, row) {
+                    ////       return '<a class="opacity" valId = ' + row.id + '  id="edit"> edit</a>'
+                    ////       }
+                    ////},
+                    ////     title:''
+
+                    ////});
+                    Tablename = '#' + Tablename;
+                    $(Tablename).DataTable({
+                        "bDestroy": true,
+                        data: data,
+                        columns: merged
+                    })
+                }
+            });
+        }
+
+        $(document).ready(function () {
+            tblemp('/Student/getStudentdetails1', 'GetStudentDetailsTable');
+            
+        });
+
+    </script>
+    
+    }

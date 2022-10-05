@@ -1,0 +1,782 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Dashboard | SECHRIST</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/line.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+</head>
+
+
+<body style="background-color:#fff!important;">
+
+    <!-- <body data-layout="horizontal" data-topbar="colored"> -->
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="d-flex">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box">
+                        <a href="#" class="logo logo-dark">
+                            <span class="logo-sm">
+                                <img src="assets/images/logo-sm.png" alt="" height="22">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/Allenlogo.png" alt="" height="20">
+                            </span>
+                        </a>
+
+                        <a href="#" class="logo logo-light">
+                            <span class="logo-sm">
+                                <img src="assets/images/logo-sm.png" alt="" height="22">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets/images/Allenlogo.png" alt="" height="20">
+                            </span>
+                        </a>
+                    </div>
+
+                    <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn">
+                        <i class="fa fa-fw fa-bars"></i>
+                    </button>
+
+                    <!-- App Search-->
+                    <!--<form class="app-search d-none d-lg-block">
+                        <div class="position-relative">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <span class="uil-search"></span>
+                        </div>
+                    </form>-->
+                    <h3 class="ml-5 mt-3">CHAMBER SERIAL NUMBER: 33HS0148</h3>
+                </div>
+
+                <div class="d-flex">
+
+                    <div class="dropdown d-inline-block d-lg-none ms-2">
+
+
+                    </div>
+
+
+                    <div class="dropdown d-none d-lg-inline-block ms-1">
+                        <button type="button" class="btn header-item noti-icon waves-effect"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="uil-apps"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
+                            <div class="px-lg-2">
+                                <div class="row g-0">
+                                    <div class="col">
+                                        <a class="dropdown-icon-item" href="#">
+                                            <img src="assets/images/brands/github.png" alt="Github">
+                                            <span>GitHub</span>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="dropdown-icon-item" href="#">
+                                            <img src="assets/images/brands/bitbucket.png" alt="bitbucket">
+                                            <span>Bitbucket</span>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="dropdown-icon-item" href="#">
+                                            <img src="assets/images/brands/dribbble.png" alt="dribbble">
+                                            <span>Dribbble</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="row g-0">
+                                    <div class="col">
+                                        <a class="dropdown-icon-item" href="#">
+                                            <img src="assets/images/brands/dropbox.png" alt="dropbox">
+                                            <span>Dropbox</span>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="dropdown-icon-item" href="#">
+                                            <img src="assets/images/brands/mail_chimp.png" alt="mail_chimp">
+                                            <span>Mail Chimp</span>
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="dropdown-icon-item" href="#">
+                                            <img src="assets/images/brands/slack.png" alt="slack">
+                                            <span>Slack</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown d-none d-lg-inline-block ms-1">
+                        <button type="button" class="btn header-item noti-icon waves-effect" data-bs-toggle="fullscreen">
+                            <i class="uil-minus-path"></i>
+                        </button>
+                    </div>
+
+                    <div class="dropdown d-inline-block pr-3">
+                        <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-notifications-dropdown"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="uil-bell"></i>
+
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                             aria-labelledby="page-header-notifications-dropdown">
+                            <div class="p-3">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <h5 class="m-0 font-size-16"> Notifications </h5>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="#!" class="small"> Mark all as read</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-simplebar style="max-height: 230px;">
+                                <a href="javascript:void(0);" class="text-reset notification-item">
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-shrink-0 me-3">
+                                            <div class="avatar-xs">
+                                                <span class="avatar-title bg-primary rounded-circle font-size-16">
+                                                    <i class="uil-shopping-basket"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1">Your order is placed</h6>
+                                            <div class="font-size-12 text-muted">
+                                                <p class="mb-1">If several languages coalesce the grammar</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 3 min ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0);" class="text-reset notification-item">
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-shrink-0 me-3">
+                                            <img src="assets/images/users/avatar-3.jpg" class="rounded-circle avatar-xs" alt="user-pic">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1">James Lemire</h6>
+                                            <div class="font-size-12 text-muted">
+                                                <p class="mb-1">It will seem like simplified English.</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 1 hour ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0);" class="text-reset notification-item">
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-shrink-0 me-3">
+                                            <div class="avatar-xs">
+                                                <span class="avatar-title bg-success rounded-circle font-size-16">
+                                                    <i class="uil-truck"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1">Your item is shipped</h6>
+                                            <div class="font-size-12 text-muted">
+                                                <p class="mb-1">If several languages coalesce the grammar</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 3 min ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="javascript:void(0);" class="text-reset notification-item">
+                                    <div class="d-flex align-items-start">
+                                        <div class="flex-shrink-0 me-3">
+                                            <img src="assets/images/users/avatar-4.jpg" class="rounded-circle avatar-xs" alt="user-pic">
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1">Salena Layfield</h6>
+                                            <div class="font-size-12 text-muted">
+                                                <p class="mb-1">As a skeptical Cambridge friend of mine occidental.</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> 1 hours ago</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="p-2 border-top">
+                                <div class="d-grid">
+                                    <a class="btn btn-sm btn-link font-size-14 text-center" href="javascript:void(0)">
+                                        <i class="uil-arrow-circle-right me-1"></i> View More..
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown d-inline-block prl-4">
+                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-4.jpg"
+                                 alt="Header Avatar">
+                            <span class="d-none d-xl-inline-block ms-1 fw-medium font-size-15 text-color">MATTHEW FLICK</span>
+                            <i class="uil-angle-down d-none d-xl-inline-block font-size-15"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <!-- item-->
+                            <a class="dropdown-item" href="#"><i class="uil uil-user-circle font-size-18 align-middle text-muted me-1"></i> <span class="align-middle">View Profile</span></a>
+                            <a class="dropdown-item" href="#"><i class="uil uil-wallet font-size-18 align-middle me-1 text-muted"></i> <span class="align-middle">My Wallet</span></a>
+                            <a class="dropdown-item d-block" href="#"><i class="uil uil-cog font-size-18 align-middle me-1 text-muted"></i> <span class="align-middle">Settings</span> <span class="badge bg-soft-success rounded-pill mt-1 ms-2">03</span></a>
+                            <a class="dropdown-item" href="#"><i class="uil uil-lock-alt font-size-18 align-middle me-1 text-muted"></i> <span class="align-middle">Lock screen</span></a>
+                            <a class="dropdown-item" href="#"><i class="uil uil-sign-out-alt font-size-18 align-middle me-1 text-muted"></i> <span class="align-middle">Sign out</span></a>
+                        </div>
+                    </div>
+
+                    <!--<div class="dropdown d-inline-block">
+                        <button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
+                            <i class="uil-cog"></i>
+                        </button>
+                    </div>-->
+
+                </div>
+            </div>
+        </header>
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="vertical-menu">
+
+            <!-- LOGO -->
+            <div class="navbar-brand-box">
+                <a href="" class="logo logo-dark">
+                    <span class="logo-sm">
+                        <img src="assets/images/logo-sm.png" alt="" height="22">
+                    </span>
+                    <span class="logo-lg">
+
+                        <img src="assets/images/Allenlogo.png" alt="" height="100">
+                    </span>
+                </a>
+
+                <a href="" class="logo logo-light">
+                    <span class="logo-sm">
+                        <img src="assets/images/logo-sm.png" alt="" height="22">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="assets/images/Allenlogo.png" alt="" height="20">
+                    </span>
+                </a>
+            </div>
+
+            <!--<button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn">
+                <i class="fa fa-fw fa-bars"></i>
+            </button>-->
+
+            <div data-simplebar class="sidebar-menu-scroll">
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled" id="side-menu">
+                        <li class="menu-title">Dashboard</li>
+
+                        <li class="mm-active">
+                            <a href="CenterDetails.html">
+                                <i class="uil-home-alt"></i>
+                                <span>Centre Details</span>
+                            </a>
+                        </li>
+                        <!--<li>
+                            <a href="CenterDetail.html">
+                                <i class="uil-window-section"></i>
+                                <span>Chamber Details</span>
+                            </a>
+                        </li>-->
+                        
+
+                        <!--<li class="menu-title">Apps</li>-->
+
+                        <li>
+                            <a href="WeeklyChecks.html" class="waves-effect">
+                                <i class="uil-calender"></i>
+                                <span>Chamber Documents</span>
+                            </a>
+                        </li>
+
+                        <li class="">
+                            <a href="#" class=" waves-effect">
+                                <i class="uil-comments-alt"></i>
+                                <!--<span class="badge rounded-pill bg-warning float-end">New</span>-->
+                                <span>Daily Checks</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="waves-effect">
+                                <i class="uil-store"></i>
+                                <span>Weekly Checks</span>
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a href="#" class="waves-effect">
+                                <i class="uil-invoice"></i>
+                                <span>Semi-Annual Checks</span>
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a href="#" class="has-arrow waves-effect">
+                                <i class="uil-invoice"></i>
+                                <span>Annual PM Records</span>
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a href="#" class="waves-effect">
+                                <i class="uil-book-alt"></i>
+                                <span>Repai Reports</span>
+                            </a>
+
+                        </li>
+
+                        <!--<li class="menu-title">Pages</li>-->
+
+                        <li>
+                            <a href="#" class="waves-effect">
+                                <i class="uil-user-circle"></i>
+                                <span>Install Reports</span>
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a href="#" class="waves-effect">
+                                <i class="uil-file-alt"></i>
+                                <span>Chamber Documents</span>
+                            </a>
+
+                        </li>
+
+                        <!--<li class="menu-title">Components</li>-->
+
+                        <li>
+                            <a href="#" class="waves-effect">
+                                <i class="uil-flask"></i>
+                                <span>User Manual </span>
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a href="#" class="waves-effect">
+                                <i class="uil-shutter-alt"></i>
+                                <!--<span class="badge rounded-pill bg-info float-end">9</span>-->
+                                <span>PVHO/ASME Records</span>
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a href="#" class="waves-effect">
+                                <i class="uil-list-ul"></i>
+                                <span>Contacy Us</span>
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a href="#" class=" waves-effect">
+                                <i class="uil-chart"></i>
+                                <span>Technical Questions</span>
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a href="#" class="waves-effect">
+                                <i class="uil-streering"></i>
+                                <span>Order Parts</span>
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a href="#" class="waves-effect">
+                                <i class="uil-location-point"></i>
+                                <span>Field Service Techs</span>
+                            </a>
+
+                        </li>
+
+
+
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="upadebox mb-4">
+                                <span class="mb-0 updatetxt">320546</span>
+                                <span><i class="uil-arrow-down color-primary"></i></span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3 col-xl-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <!--<div class="float-end mt-2">
+                                        <div id="total-revenue-chart"></div>
+                                    </div>-->
+                                    <div class="row">
+                                        <div class="col-md-9">
+                                            <p class="text-muted mb-0">Daily Chamber Check</p>
+                                            <p class="text-muted mb-0">Last Completed:12/14/21</p>
+                                            <p class="text-success mb-0">Next Due:12/15/21</p>
+                                        </div>
+                                        <div class="col-md-3 mt-3">
+                                            <div class="pinkcircle">
+                                                <i class="uil-flask dashhighliter"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 mt-2 ">
+
+                                        <button class="btn btn-warning btn-rounded mt-1">
+                                            <i class="uil-invoice mr-1"></i> Daily Overdue
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- end col-->
+
+                        <div class="col-md-3 col-xl-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-9">
+                                            <p class="text-muted mb-0">Weekly Chamber Check</p>
+                                            <p class="text-muted mb-0">Last Completed:12/10/21</p>
+                                            <p class="text-success mb-0">Next Due:12/17/21</p>
+                                        </div>
+
+                                        <div class="col-md-3 mt-3">
+                                            <div class="vilotecircle">
+                                                <i class="uil-flask dashhighliter"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 mt-2 ">
+                                        <button class="btn btn-primary btn-rounded mt-1">
+                                            <i class="uil-invoice mr-1"></i>Complete Weekly Checks
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- end col-->
+
+                        <div class="col-md-3 col-xl-3">
+                            <div class="card">
+                                <div class="card-body">
+
+                                    <div class="row">
+                                        <div class="col-md-9">
+                                            <p class="text-muted mb-0">Semi-Annual Chamber Check</p>
+                                            <p class="text-muted mb-0">Last Completed:6/14/21</p>
+                                            <p class="text-success mb-0">Next Due:1/14/22</p>
+                                        </div>
+                                        <div class="col-md-3 mt-3">
+                                            <div class="greencircle">
+                                                <i class="uil-flask dashhighliter"></i>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-12 mt-2 ">
+                                        <button class="btn btn-primary btn-rounded mt-1">
+                                            <i class="uil-invoice mr-1"></i>Complete Semi-Annual Checks
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- end col-->
+
+                        <div class="col-md-3 col-xl-3">
+
+                            <div class="card">
+                                <div class="card-body">
+
+                                    <div class="row">
+                                        <div class="col-md-9">
+                                            <p class="text-muted mb-0">Chamber Cycle Log</p>
+                                            <p class="text-muted mb-0">Last Completed:6/14/21</p>
+                                            <p class="text-success mb-0">Next Due:1/14/22</p>
+                                        </div>
+                                        <div class="col-md-3 mt-3">
+                                            <div class="litepinkcircle">
+                                                <i class="uil-flask dashhighliter"></i>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-12 mt-2 ">
+                                        <button class="btn btn-primary btn-rounded mt-1">
+                                            <i class="uil-invoice mr-1"></i>Complete Cycle Log
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- end col-->
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="col-md-12">
+                            <h5>CENTER DETAIL</h5>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-xl-8">
+                            <div class="greybox1">
+
+                                <div class="row">
+                                    <div class="">
+
+                                        <div class="card-body">
+                                            <div class="card-title">
+                                                <div class="text-center">
+                                                    <h2>UNDER CONSTRUCTION</h2>
+                                                </div>
+
+
+                                            </div>
+
+                                            <div class="mt-1">
+                                                <div class="col-md-12">
+                                                    <div data-simplebar style="max-height: 710px;">
+                                                        <img src="assets/images/underconstruction2.png" style="width:100%!important" />
+                                                    </div>
+                                                    <!--<div class="text-center">
+                                                        <h2>UNDER CONSTRUCTION</h2>
+                                                    </div>-->
+
+                                                </div>
+                                            </div>
+                                            <!--<div class="row mb-1 mt-1">
+
+                                            </div>-->
+                                            <!--<div class="row mb-1 mt-1">
+                                                <div class="col-md-12" style="text-align:end">
+                                                    <span><strong>Cycle Count :</strong> </span><span class="mr-1">5437</span>
+                                                    <span><strong>Date Completed :</strong> </span><span class="mr-1">02/25/2022</span>
+                                                    <span><strong>Time Completed :</strong> </span><span class="mr-1">5:15pm</span>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card card-primary">
+                                        <div class="card-body text-center">
+                                            <h4 class="text-white">2/15/2020</h4>
+                                            <div>
+                                                <span class="text-white font-size-10">Last Sechrist Service</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card card-secondary">
+                                        <div class="card-body text-center">
+                                            <h4 class="text-white">3/15/2026</h4>
+                                            <div>
+                                                <span class="text-white font-size-10">Chamber Tune-Up Date</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card card-green">
+                                        <div class="card-body text-center">
+                                            <h2 class="text-white"><i class="uil-cog"></i></h2>
+                                            <div>
+                                                <span class="text-white font-size-10">Last Sechrist Service</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card card-primary">
+                                        <div class="card-body text-center">
+                                            <h2 class="text-white"><i class="uil-comments-alt"></i></h2>
+                                            <div>
+                                                <h4 class="text-white font-size-10">Last Sechrist Service</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="card cardcustgrey">
+                                    <div class="card-body cardbodycust">
+                                        <div style="display:inline-block">
+                                            <h4 class="card-title mb-4 mt-4">TECHNICIANS DETAILS</h4>
+                                            <span><i class="uil-ellipsis-h font-size-13"></i></span>
+                                        </div>
+                                        <div data-simplebar style="max-height: 400px;">
+                                            <div class="table-responsive">
+                                                <table class="table table-borderless table-centered table-nowrap">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="width: 20px;"><img src="assets/images/users/avatar-4.jpg" class="avatar-xs rounded-circle " alt="..."></td>
+                                                            <td>
+                                                                <h6 class="font-size-15 mb-1 fw-normal">Scott Mckiney</h6>
+                                                                <p class="text-normal font-size-13 mb-0">smckinney@sechristusa.com</p>
+                                                            </td>
+
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td><img src="assets/images/users/avatar-5.jpg" class="avatar-xs rounded-circle " alt="..."></td>
+                                                            <td>
+                                                                <h6 class="font-size-15 mb-1 fw-normal">Don Adams</h6>
+                                                                <p class="text-muted font-size-13 mb-0">dadams@sechristusa.com</p>
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td><img src="assets/images/users/avatar-6.jpg" class="avatar-xs rounded-circle " alt="..."></td>
+                                                            <td>
+                                                                <h6 class="font-size-15 mb-1 fw-normal">Dan Jordan</h6>
+                                                                <p class="text-normal font-size-13 mb-0">smckinney@sechristusa.com</p>
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td><img src="assets/images/users/avatar-7.jpg" class="avatar-xs rounded-circle " alt="..."></td>
+                                                            <td>
+                                                                <h6 class="font-size-15 mb-1 fw-normal">Dan Jordan</h6>
+                                                                <p class="text-normal font-size-13 mb-0">smckinney@sechristusa.com</p>
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td><img src="assets/images/users/avatar-8.jpg" class="avatar-xs rounded-circle " alt="..."></td>
+                                                            <td>
+                                                                <h6 class="font-size-15 mb-1 fw-normal">Scott Mckiney</h6>
+                                                                <p class="text-normal font-size-13 mb-0">smckinney@sechristusa.com</p>
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td><img src="assets/images/users/avatar-2.jpg" class="avatar-xs rounded-circle " alt="..."></td>
+                                                            <td>
+                                                                <h6 class="font-size-15 mb-1 fw-normal">Don Adams</h6>
+                                                                <p class="text-muted font-size-13 mb-0">dadams@sechristusa.com</p>
+                                                            </td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td><img src="assets/images/users/avatar-1.jpg" class="avatar-xs rounded-circle " alt="..."></td>
+                                                            <td>
+                                                                <h6 class="font-size-15 mb-1 fw-normal">Dan Jordan</h6>
+                                                                <p class="text-normal font-size-13 mb-0">smckinney@sechristusa.com</p>
+                                                            </td>
+
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div> <!-- enbd table-responsive-->
+                                        </div> <!-- data-sidebar-->
+                                    </div>
+                                </div>
+                                <!-- end card-body-->
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div> <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <script>document.write(new Date().getFullYear())</script> © .
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+    <!-- Right Sidebar -->
+    <!-- /Right-bar -->
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay"></div>
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script src="assets/libs/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="assets/libs/jquery.counterup/jquery.counterup.min.js"></script>
+
+    <!-- apexcharts -->
+    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+
+    <script src="assets/js/pages/dashboard.init.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
